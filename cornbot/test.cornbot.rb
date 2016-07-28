@@ -103,6 +103,7 @@ class Afternoon
   include Cinch::Plugin
 
   match /afternoon/i, use_prefix: false
+  match /midday/i, use_prefix: false
   def execute(m)
     preadverb = ["certainly", "sure", "absolutely", "unquestionably", ""].sample
     preadverb << ' ' if !preadverb.empty?
